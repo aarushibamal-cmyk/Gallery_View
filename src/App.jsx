@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
   const [userData,setUserData] = useState([]);
