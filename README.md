@@ -1,16 +1,68 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 📷 React Image Gallery
+ 
+A responsive, paginated image gallery built with React. Fetches live photos from the [Lorem Picsum](https://picsum.photos) API and displays them in a clean dark UI with author credits.
+ 
+## ✨ Features
+ 
+- Browse hundreds of photos with **next / previous pagination**
+- **Responsive grid layout** that adapts to any screen size
+- Click any image to view the **original source**
+- Author name displayed on every photo card
+- Clean dark theme UI
+## 🛠️ Tech Stack
+ 
+- **React** — component-based UI
+- **Axios** — API requests
+- **Lorem Picsum API** — free photo library (`https://picsum.photos`)
+- **CSS Grid** — responsive layout
+## 🚀 Getting Started
+ 
+### Prerequisites
+ 
+- Node.js (v16+)
+- npm or yarn
+### Installation
+ 
+```bash
+# Clone the repo
+git clone https://github.com/your-username/react-image-gallery.git
+ 
+# Navigate into the project
+cd react-image-gallery
+ 
+# Install dependencies
+npm install
+ 
+# Start the development server
+npm start
+```
+ 
+The app will open at `http://localhost:3000`.
+ 
+## 📁 Project Structure
+ 
+```
+src/
+├── App.jsx        # Main gallery component
+├── App.css        # Styles
+└── index.js       # Entry point
+```
+ 
+## 🔌 API
+ 
+This project uses the free [Lorem Picsum API](https://picsum.photos/v2/list).
+ 
+```
+GET https://picsum.photos/v2/list?page=1&limit=30
+```
+ 
+No API key required.
+ 
+## 📸 Screenshots
+ 
+![Gallery](public/assets/Screenshot%202026-04-19%20124130.png)
+![Gallery](public/assets/Screenshot%202026-04-19%20124119.png)
+ 
+## 📄 License
+ 
+MIT
